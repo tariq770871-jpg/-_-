@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ELITE - أكاديمية التداول والتحليل الفني</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#f2ca50",
+                "background": "#0d0e12", // خلفية أغمق للفصل
+                "surface": "#1e1f24",
+                "on-surface": "#e3e2e7",
+                "outline-variant": "#4d4635"
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-sans antialiased">
+
+    <nav class="fixed top-0 w-full z-50 bg-neutral-900/90 backdrop-blur-xl border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="text-2xl font-black text-primary tracking-widest uppercase">ELITE TRADING</span>
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="index.html" class="hover:text-primary transition-colors">الرئيسية</a>
+                <a href="trading.html" class="text-primary font-bold border-b-2 border-primary">أكاديمية التداول</a>
+                <a href="earning.html" class="text-white/60 hover:text-primary">الربح من الإنترنت</a>
+            </div>
+            <button class="material-symbols-outlined text-white/70">account_circle</button>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 text-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">احترف <span class="text-primary">سلوك السعر</span></h1>
+            <p class="text-xl text-white/60 mb-10">تعلم كيف يفكك المحترفون الرسوم البيانية بعيداً عن المؤشرات المضللة.</p>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-surface border border-white/5 p-8 rounded-2xl hover:border-primary/30 transition-all group">
+                <span class="material-symbols-outlined text-4xl text-primary mb-6">candlestick_chart</span>
+                <h3 class="text-2xl font-bold mb-4">هندسة الشموع اليابانية</h3>
+                <p class="text-white/50 mb-6 text-sm leading-relaxed">فهم سيكولوجية البائعين والمشترين من خلال حركة الشمعة الواحدة ونماذج الانعكاس.</p>
+                <a href="#" class="inline-flex items-center text-primary gap-2 font-bold">ابدأ الدرس <span class="material-symbols-outlined">arrow_left</span></a>
+            </div>
+
+            <div class="bg-surface border border-white/5 p-8 rounded-2xl hover:border-primary/30 transition-all group">
+                <span class="material-symbols-outlined text-4xl text-primary mb-6">query_stats</span>
+                <h3 class="text-2xl font-bold mb-4">استراتيجية الكسر الكاذب</h3>
+                <p class="text-white/50 mb-6 text-sm leading-relaxed">تعلم كيف تكتشف مصائد السيولة (Liquidity Traps) وتدخل مع صنّاع السوق.</p>
+                <a href="#" class="inline-flex items-center text-primary gap-2 font-bold">ابدأ الدرس <span class="material-symbols-outlined">arrow_left</span></a>
+            </div>
+
+            <div class="bg-surface border border-white/5 p-8 rounded-2xl hover:border-primary/30 transition-all group">
+                <span class="material-symbols-outlined text-4xl text-primary mb-6">shield</span>
+                <h3 class="text-2xl font-bold mb-4">إدارة رأس المال</h3>
+                <p class="text-white/50 mb-6 text-sm leading-relaxed">القاعدة رقم 1: لا تخسر مالك. كيف تحسب حجم الصفقة وتوزع المخاطر باحترافية.</p>
+                <a href="#" class="inline-flex items-center text-primary gap-2 font-bold">ابدأ الدرس <span class="material-symbols-outlined">arrow_left</span></a>
+            </div>
+
+        </div>
+
+        <div class="mt-16 bg-neutral-900 border border-white/10 rounded-3xl p-4 md:p-10 text-center">
+            <h2 class="text-3xl font-bold mb-4">تحليلات السوق المباشرة</h2>
+            <p class="text-white/40 mb-8">هذا القسم مخصص للمشتركين في باقة النخبة (VIP) فقط.</p>
+            <div class="aspect-video bg-black/40 rounded-xl border border-white/5 flex items-center justify-center">
+                <span class="material-symbols-outlined text-6xl text-white/10">lock</span>
+            </div>
+        </div>
+    </main>
+
+    <nav class="md:hidden fixed bottom-0 w-full bg-neutral-900/90 border-t border-white/10 flex justify-around py-4 z-50">
+        <a href="index.html" class="material-symbols-outlined text-white/40">home</a>
+        <a href="trading.html" class="material-symbols-outlined text-primary">monitoring</a>
+        <a href="earning.html" class="material-symbols-outlined text-white/40">payments</a>
+    </nav>
+
+</body>
+</html>
