@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html class="dark" dir="rtl" lang="ar">
 <head>
-    <title>موقعي الأول</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>VIP MARKET GLOBAL | المنصة المتكاملة</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#f2ca50",
+                "background": "#0d0e12",
+                "surface": "#16171d"
+              }
+            }
+          }
+        }
+    </script>
 </head>
-<body>
-    <h1>مرحباً بكم في موقعي</h1>
-    <p>هذا الموقع جاهز للإعلانات والربح</p>
+<body class="bg-background text-white font-['Manrope'] antialiased">
+
+    <header class="fixed top-0 w-full z-50 bg-neutral-900/80 backdrop-blur-xl border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-2xl font-black text-primary tracking-tighter">ELITE GLOBAL</span>
+            <nav class="hidden md:flex gap-6">
+                <a href="trading.html" class="hover:text-primary transition-colors text-sm">التداول</a>
+                <a href="earning.html" class="hover:text-primary transition-colors text-sm">الأعمال</a>
+                <a href="apps.html" class="hover:text-primary transition-colors text-sm">التطبيقات</a>
+                <a href="ai-tools.html" class="hover:text-primary transition-colors text-sm">الذكاء الاصطناعي</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight">نظام واحد.. <span class="text-primary italic">آفاق غير محدودة</span></h1>
+                <p class="text-white/40 text-lg max-w-2xl mx-auto leading-relaxed">مرحباً بك في VIP MARKET GLOBAL. اختر مسارك الاحترافي وانطلق نحو القمة مع أدوات النخبة.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
+                
+                <a href="trading.html" class="md:col-span-2 md:row-span-2 bg-surface border border-white/5 rounded-[2.5rem] p-10 flex flex-col justify-end group hover:border-primary/40 transition-all relative overflow-hidden">
+                    <div class="absolute top-10 right-10 opacity-10 group-hover:opacity-100 transition-opacity">
+                        <span class="material-symbols-outlined text-8xl text-primary">monitoring</span>
+                    </div>
+                    <h2 class="text-4xl font-black mb-2">أكاديمية التداول</h2>
+                    <p class="text-white/40 mb-6">احترف سلوك السعر واستراتيجيات الحيتان.</p>
+                    <span class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-black font-bold">←</span>
+                </a>
+
+                <a href="earning.html" class="md:col-span-2 bg-surface border border-white/5 rounded-[2.5rem] p-8 flex items-center justify-between group hover:border-green-400/40 transition-all">
+                    <div>
+                        <h2 class="text-2xl font-black mb-1">الربح والأعمال</h2>
+                        <p class="text-white/40 text-sm">بناء المتاجر والعمل الحر.</p>
+                    </div>
+                    <span class="material-symbols-outlined text-4xl text-green-400">payments</span>
+                </a>
+
+                <a href="apps.html" class="bg-surface border border-white/5 rounded-[2.5rem] p-8 flex flex-col justify-between group hover:border-blue-400/40 transition-all">
+                    <span class="material-symbols-outlined text-3xl text-blue-400">apps</span>
+                    <div>
+                        <h2 class="text-xl font-black">التطبيقات</h2>
+                    </div>
+                </a>
+
+                <a href="ai-tools.html" class="bg-surface border border-white/5 rounded-[2.5rem] p-8 flex flex-col justify-between group hover:border-purple-400/40 transition-all">
+                    <span class="material-symbols-outlined text-3xl text-purple-400">auto_awesome</span>
+                    <div>
+                        <h2 class="text-xl font-black">الذكاء الاصطناعي</h2>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 border-t border-white/5 text-center text-white/20 text-xs">
+        <p>© 2026 VIP MARKET GLOBAL | TARIQ AL-JA'DALI</p>
+    </footer>
+
+    <nav class="md:hidden fixed bottom-0 w-full bg-neutral-900/90 border-t border-white/10 flex justify-around py-4 z-50">
+        <a href="trading.html" class="material-symbols-outlined text-white/40">monitoring</a>
+        <a href="earning.html" class="material-symbols-outlined text-white/40">payments</a>
+        <a href="apps.html" class="material-symbols-outlined text-white/40">apps</a>
+        <a href="ai-tools.html" class="material-symbols-outlined text-white/40">smart_toy</a>
+    </nav>
+
 </body>
 </html>
