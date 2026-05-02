@@ -1,95 +1,68 @@
 <!DOCTYPE html>
-<html class="dark" dir="rtl" lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>VIP MARKET GLOBAL | المنصة المتكاملة</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1" rel="stylesheet"/>
-    <script id="tailwind-config">
-        tailwind.config = {
-          darkMode: "class",
-          theme: {
-            extend: {
-              colors: {
-                "primary": "#f2ca50",
-                "background": "#0d0e12",
-                "surface": "#16171d"
-              }
-            }
-          }
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP MARKET GLOBAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body { font-family: 'Manrope', sans-serif; background-color: #050505; color: #ffffff; }
+        .gold-gradient { background: linear-gradient(135deg, #f2ca50 0%, #b8860b 100%); }
+        .gold-text { background: linear-gradient(135deg, #f2ca50 0%, #b8860b 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .bento-card { background: #0a0a0a; border: 1px solid #1a1a1a; transition: all 0.3s ease; }
+        .bento-card:active { transform: scale(0.98); border-color: #f2ca50; }
+    </style>
 </head>
-<body class="bg-background text-white font-['Manrope'] antialiased">
-
-    <header class="fixed top-0 w-full z-50 bg-neutral-900/80 backdrop-blur-xl border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-2xl font-black text-primary tracking-tighter">ELITE GLOBAL</span>
-            <nav class="hidden md:flex gap-6">
-                <a href="trading.html" class="hover:text-primary transition-colors text-sm">التداول</a>
-                <a href="earning.html" class="hover:text-primary transition-colors text-sm">الأعمال</a>
-                <a href="apps.html" class="hover:text-primary transition-colors text-sm">التطبيقات</a>
-                <a href="ai-tools.html" class="hover:text-primary transition-colors text-sm">الذكاء الاصطناعي</a>
-            </nav>
+<body class="pb-28">
+    <header class="p-6 flex justify-between items-center bg-black/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="text-2xl font-black tracking-tighter gold-text">VIP MARKET</div>
+        <div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center bg-white/5">
+            <span class="material-symbols-rounded text-white text-xl">bolt</span>
         </div>
     </header>
 
-    <main class="pt-32 pb-20 px-6">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight">نظام واحد.. <span class="text-primary italic">آفاق غير محدودة</span></h1>
-                <p class="text-white/40 text-lg max-w-2xl mx-auto leading-relaxed">مرحباً بك في VIP MARKET GLOBAL. اختر مسارك الاحترافي وانطلق نحو القمة مع أدوات النخبة.</p>
-            </div>
+    <main class="px-6 space-y-6 mt-4">
+        <div class="p-8 rounded-[2.5rem] gold-gradient text-black">
+            <h1 class="text-3xl font-black mb-1">بوابتك نحو النخبة</h1>
+            <p class="opacity-90 font-bold text-sm uppercase">Elite Global Ecosystem</p>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[600px]">
-                
-                <a href="trading.html" class="md:col-span-2 md:row-span-2 bg-surface border border-white/5 rounded-[2.5rem] p-10 flex flex-col justify-end group hover:border-primary/40 transition-all relative overflow-hidden">
-                    <div class="absolute top-10 right-10 opacity-10 group-hover:opacity-100 transition-opacity">
-                        <span class="material-symbols-outlined text-8xl text-primary">monitoring</span>
-                    </div>
-                    <h2 class="text-4xl font-black mb-2">أكاديمية التداول</h2>
-                    <p class="text-white/40 mb-6">احترف سلوك السعر واستراتيجيات الحيتان.</p>
-                    <span class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-black font-bold">←</span>
-                </a>
+        <div class="grid grid-cols-2 gap-4">
+            <a href="trading" class="col-span-2 bento-card p-6 rounded-[2.5rem] flex items-center justify-between">
+                <div>
+                    <h3 class="text-xl font-black">أكاديمية التداول</h3>
+                    <p class="text-xs text-gray-500 font-bold">PRICE ACTION ACADEMY</p>
+                </div>
+                <span class="material-symbols-rounded text-4xl text-[#f2ca50]">monitoring</span>
+            </a>
 
-                <a href="earning.html" class="md:col-span-2 bg-surface border border-white/5 rounded-[2.5rem] p-8 flex items-center justify-between group hover:border-green-400/40 transition-all">
-                    <div>
-                        <h2 class="text-2xl font-black mb-1">الربح والأعمال</h2>
-                        <p class="text-white/40 text-sm">بناء المتاجر والعمل الحر.</p>
-                    </div>
-                    <span class="material-symbols-outlined text-4xl text-green-400">payments</span>
-                </a>
+            <a href="earning" class="bento-card p-6 rounded-[2.5rem] flex flex-col justify-between h-44">
+                <span class="material-symbols-rounded text-3xl text-[#f2ca50]">payments</span>
+                <h3 class="font-black text-lg">الربح والخدمات</h3>
+            </a>
 
-                <a href="apps.html" class="bg-surface border border-white/5 rounded-[2.5rem] p-8 flex flex-col justify-between group hover:border-blue-400/40 transition-all">
-                    <span class="material-symbols-outlined text-3xl text-blue-400">apps</span>
-                    <div>
-                        <h2 class="text-xl font-black">التطبيقات</h2>
-                    </div>
-                </a>
+            <a href="ai-tools" class="bento-card p-6 rounded-[2.5rem] flex flex-col justify-between h-44">
+                <span class="material-symbols-rounded text-3xl text-[#f2ca50]">smart_toy</span>
+                <h3 class="font-black text-lg">أدوات الذكاء</h3>
+            </a>
 
-                <a href="ai-tools.html" class="bg-surface border border-white/5 rounded-[2.5rem] p-8 flex flex-col justify-between group hover:border-purple-400/40 transition-all">
-                    <span class="material-symbols-outlined text-3xl text-purple-400">auto_awesome</span>
-                    <div>
-                        <h2 class="text-xl font-black">الذكاء الاصطناعي</h2>
-                    </div>
-                </a>
-
-            </div>
+            <a href="apps" class="col-span-2 bento-card p-6 rounded-[2.5rem] flex items-center gap-4">
+                <div class="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center">
+                    <span class="material-symbols-rounded text-3xl text-[#f2ca50]">widgets</span>
+                </div>
+                <div>
+                    <h3 class="font-black">متجر التطبيقات</h3>
+                    <p class="text-xs text-gray-500 font-bold uppercase">MIUI Solutions</p>
+                </div>
+            </a>
         </div>
     </main>
 
-    <footer class="py-10 border-t border-white/5 text-center text-white/20 text-xs">
-        <p>© 2026 VIP MARKET GLOBAL | TARIQ AL-JA'DALI</p>
-    </footer>
-
-    <nav class="md:hidden fixed bottom-0 w-full bg-neutral-900/90 border-t border-white/10 flex justify-around py-4 z-50">
-        <a href="trading.html" class="material-symbols-outlined text-white/40">monitoring</a>
-        <a href="earning.html" class="material-symbols-outlined text-white/40">payments</a>
-        <a href="apps.html" class="material-symbols-outlined text-white/40">apps</a>
-        <a href="ai-tools.html" class="material-symbols-outlined text-white/40">smart_toy</a>
+    <nav class="fixed bottom-6 left-6 right-6 bg-[#0a0a0a]/90 backdrop-blur-xl border border-white/10 h-16 rounded-[1.5rem] flex items-center justify-around z-50">
+        <a href="/" class="text-[#f2ca50]"><span class="material-symbols-rounded">home</span></a>
+        <a href="https://wa.me/967782138587" class="text-gray-500"><span class="material-symbols-rounded">chat</span></a>
     </nav>
-
 </body>
 </html>
