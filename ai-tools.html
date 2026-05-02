@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ELITE - أدوات الذكاء الاصطناعي</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#f2ca50",
+                "background": "#08090a",
+                "surface-ai": "#14151a",
+                "ai-purple": "#a855f7" // لون يوحي بالذكاء والابتكار
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-background text-white font-sans antialiased">
+
+    <nav class="fixed top-0 w-full z-50 bg-neutral-900/90 backdrop-blur-xl border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="text-2xl font-black text-primary tracking-widest uppercase">ELITE AI</span>
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="index.html" class="hover:text-primary transition-colors text-sm">الرئيسية</a>
+                <a href="apps.html" class="text-white/60 hover:text-primary text-sm">التطبيقات</a>
+                <a href="ai-tools.html" class="text-primary font-bold border-b-2 border-primary text-sm">الذكاء الاصطناعي</a>
+            </div>
+            <span class="material-symbols-outlined text-ai-purple animate-pulse">auto_awesome</span>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-16 px-6 relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-64 bg-ai-purple/5 blur-[120px] rounded-full"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">عزز إنتاجيتك بقوة <span class="text-ai-purple">الذكاء الاصطناعي</span></h1>
+            <p class="text-lg text-white/40 mb-10 max-w-2xl mx-auto">مجموعة مختارة من أقوى النماذج والأدوات الذكية المصممة لخدمة المبدعين والمسوقين والمطورين.</p>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="group relative bg-surface-ai border border-white/5 p-10 rounded-[2rem] overflow-hidden transition-all hover:border-ai-purple/30">
+                <div class="absolute top-0 left-0 w-1 h-full bg-ai-purple opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <span class="material-symbols-outlined text-5xl text-ai-purple mb-6">database</span>
+                <h3 class="text-3xl font-bold mb-4">Nexus Data Core</h3>
+                <p class="text-white/50 mb-8 leading-relaxed">تحليل معمق للبيانات الضخمة واستخراج الرؤى الاستراتيجية باستخدام نماذج تعلم آلي متطورة. مثالي لاتخاذ القرارات المبنية على الحقائق.</p>
+                <button class="px-8 py-3 bg-ai-purple text-white font-bold rounded-xl hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] transition-all">دخول المنصة</button>
+            </div>
+
+            <div class="group relative bg-surface-ai border border-white/5 p-10 rounded-[2rem] overflow-hidden transition-all hover:border-primary/30">
+                <div class="absolute top-0 left-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <span class="material-symbols-outlined text-5xl text-primary mb-6">edit_note</span>
+                <h3 class="text-3xl font-bold mb-4">CopyForge Pro</h3>
+                <p class="text-white/50 mb-8 leading-relaxed">مولد المحتوى التسويقي الذكي. صياغة نصوص إعلانية ومقالات متوافقة مع الـ SEO بلمسة إبداعية تناسب العلامات التجارية الفاخرة.</p>
+                <button class="px-8 py-3 bg-primary text-black font-bold rounded-xl hover:shadow-[0_0_20px_rgba(242,202,80,0.4)] transition-all">ابدأ الصياغة</button>
+            </div>
+
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div class="bg-surface-ai/50 border border-white/5 p-6 rounded-2xl flex items-center gap-4 hover:bg-surface-ai transition-colors">
+                <span class="material-symbols-outlined text-ai-purple">image_search</span>
+                <span class="font-bold">توليد الصور الاحترافية</span>
+            </div>
+            <div class="bg-surface-ai/50 border border-white/5 p-6 rounded-2xl flex items-center gap-4 hover:bg-surface-ai transition-colors">
+                <span class="material-symbols-outlined text-ai-purple">translate</span>
+                <span class="font-bold">الترجمة العصبية الذكية</span>
+            </div>
+            <div class="bg-surface-ai/50 border border-white/5 p-6 rounded-2xl flex items-center gap-4 hover:bg-surface-ai transition-colors">
+                <span class="material-symbols-outlined text-ai-purple">terminal</span>
+                <span class="font-bold">مساعد المطورين الذكي</span>
+            </div>
+        </div>
+    </main>
+
+    <nav class="md:hidden fixed bottom-0 w-full bg-neutral-900/90 border-t border-white/10 flex justify-around py-4 z-50">
+        <a href="index.html" class="material-symbols-outlined text-white/40">home</a>
+        <a href="apps.html" class="material-symbols-outlined text-white/40">apps</a>
+        <a href="ai-tools.html" class="material-symbols-outlined text-ai-purple">auto_awesome</a>
+    </nav>
+
+</body>
+</html>
